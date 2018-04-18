@@ -1,0 +1,21 @@
+Microsoft.VSDesigner.DataSource.Control.TableRowData	DeleteDetails (@Original_POID)
+-------------------------------------------------------------------
+DELETE FROM PO_details
+WHERE     (POID = @Original_POID)
+
+
+Microsoft.VSDesigner.DataSource.Control.TableRowData	FillBy,GetDataBy1 (@poid)
+-----------------------
+SELECT     AccountCode, Discount, ItemDescription, MSRNo, POID, PO_DetailID, Period, Quantity, UOM, UnitPrice, Withholding, discountValue
+FROM         PO_details
+WHERE     (POID = @poid)
+
+
+
+Microsoft.VSDesigner.DataSource.Control.TableRowData	InsertOrderItem (@POID, @ItemDescription, @Quantity, @UOM, @AccountCode, @UnitPrice, @Withholding, @MSRNo, @Period, @Discount, @discountValue)
+
+--------------------------------------------
+
+INSERT INTO PO_details
+                      (POID, ItemDescription, Quantity, UOM, AccountCode, UnitPrice, Withholding, MSRNo, Period, Discount, discountValue)
+VALUES     (@POID,@ItemDescription,@Quantity,@UOM,@AccountCode,@UnitPrice,@Withholding,@MSRNo,@Period,@Discount,@discountValue)

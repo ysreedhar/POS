@@ -1,0 +1,94 @@
+<HTML><HEAD><script type='text/javascript'>function getRowHeight()
+{
+ var rHeight = document.getElementById('mydiv').clientHeight;
+var oVDiv = document.getElementById('mydiv');
+//alert ('Height = ' + document.getElementById('DeliveryTerms').clientHeight)
+//oVDiv.innerHTML = oVDiv.innerHTML + ' - ' + oVDiv.offsetHeight;
+//document.getElementById('PageNo').innerHTML = document.getElementById('PageNo').innerHTML + document.getElementById('lastPage').innerHTML;
+var x = document.getElementsByTagName('div');
+for (var i=0;i<x.length;i++)
+{
+if (x[i].className == 'Page')
+x[i].innerHTML = x[i].innerHTML + document.getElementById('lastPage').innerHTML;
+// if (x[i].className == 'ItemName')
+// x[i].innerHTML = x[i].innerHTML + '-' + x[i].offsetHeight;
+}
+}
+</script><TITLE>Report - Service Order</TITLE>
+<LINK href='resources/POS.css' rel='stylesheet' type='text/css' media='screen' >
+<LINK href='resources/POS_Print.css' rel='stylesheet' type='text/css' media='print' >
+</HEAD>
+<body  scroll=auto onLoad='getRowHeight()'>
+<table border='0' width='100%' class='CompanyLogoAddress' >
+<tr>
+<td width='80%'>&nbsp;</td>
+<td style='text-align: right'>
+<img src='resources/logo.png' /></td>
+</tr>
+</table>
+<table valign=top border='0' width=60% cellpadding='1' cellspacing='1'>
+<tr><td colspan=6 class='PONumber' nowrap><span class='OrderNumberTag'> Service Order No:</span><span class='POheader'> SO- 2072</span></td></tr>
+<tr> <td valign='top' class='OrderHeaderTag'>SO Date:</td><td colspan=4 class='OrderHeader'> 19-Jan-2007<br/>&nbsp;</td></tr>
+<tr> <td height=90px width=30%  valign='top' class='OrderHeaderTag'>To:</td><td valign=top colspan=4 class='OrderHeader'><b>Serba Mahir Sdn Bhd</b><br/>112, Taman Fortuna, Phase 11 Lorong Seroja 5, Mile 2 1/2Jalan Penampang88200 Kota Kinabalu<br/>Sabah <br/>Tel: 088-250 247<br/>Fax: 088-237 415 / 088-235 185</td></tr>
+<tr><td class='OrderHeaderTag'>Attn: </td><td colspan=4 class='OrderHeader'>Mr William</td></tr>
+<tr> <td valign='top' class='OrderHeaderTag'>Vendor's Ref: </td><td height=30px valign='top' colspan=4 class='OrderHeader'>Quote :- SM/7966/11/2005/KK (R2)</td></tr>
+<tr> <td  class='OrderHeaderTag'>Requestor: </td><td valign='top' colspan=4 class='OrderHeader'>Anthony Jiram</td></tr>
+<tr> <td  class='OrderHeaderTag'>Buyer: </td><td colspan=4 class='OrderHeader'>SHA</td></tr>
+<tr> <td  class='OrderHeaderTag'>Project / CC: </td><td colspan=4 class='OrderHeader'>MSB - Testing of STU Hydraulic Jack Tensioner's and small tools etc.</td></tr>
+<tr> <td  class='OrderHeaderTag'>Charge Type: </td><td colspan=4 class='OrderHeader'>NA</td></tr>
+<tr> <td  class='OrderHeaderTag'>SO Description: &nbsp;</td><td colspan=4 height=40px class='OrderHeader'>Rental for Air Compressor<br/></td></tr>
+</table>
+<table valign=top  border=0 cellpadding=1><tr><td colspan=6> <table Height='100%' valign=top border='0' style='border-collapse:collapse;table-layout:fixed;' width=730px cellpadding='0' cellspacing='0'>
+<tr class='ItemList'>
+<th style='border-collapse:collapse;' width='32px'>&nbsp;Item No</th>
+<th width='340px'>Item Description</th>
+<th align=center width='50px'>MSR<br/>No</th>
+<th width='40px'>Dur.</th>
+<th width='50px'>Qty</th>
+<th width='45px'>UOM</th>
+<th width='79px'>Unit Price<br/>(RM)</th>
+<th width='96px' nowrap>Total Price <br/>(RM)</th>
+</tr>
+<tr height='100%' valign='top' class='ItemList'>
+<td valign=top   align=center>1.</td>
+<td valign=top ><div ID='mydiv' class='ItemName'><span class='costcode'>Charge Code : 93513-1020-10108-NA</span><br>Rental of Air Compressor 185CFM x 120Psi<br>Rental for the Period: 18/01/07 -17/02/07<br>Discount 5%<br>Replacement Cost = RM58,000/unit</div></td>
+<td valign=top  align=center>30251</td>
+<td valign=top  align=center>1</td>
+<td valign=top  align='right'>1</td>
+<td valign=top  align=center>Unit<br/> Discount </td>
+<td valign=top  align='right'>3,000.00 <br/> 5% </td>
+<td valign=top  align='right'>3,000.00 <br/> (3,000.00)</td>
+</tr>
+<tr valign='top' height='427.00000000000000000000000000'  class='ItemList'>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr  class='ItemListSpl' >
+<td colspan=6 height=100% align=center ><span class='INote'> Important Note / Instructions</span></td>
+<td rowspan=2 valign='top' align='left' class='cg10'><b>&nbsp;Sub-Total <br/></td>
+<td rowspan=2 valign='top' align='right' class='NormalStyle'>3,000.00<br/><br/></td></tr>
+<tr  class='ItemListSpl'>
+<td colspan=6 height='90px' class='INote' valign='top' > &nbsp; -</td></tr>
+<tr  class='ItemListSpl'>
+<td  colspan=6 class='cg10'><b>RM : Three Thousand   only.</b> </td>
+<td class='cg10'><b>&nbsp;SO Total</b></td>
+<td align='right' class='NormalStyle' ><b>3,000.00</b></td>
+</tr>
+<tr class='ItemListSpl' > <td rowspan=2 colspan=4 class='DeliveryTerms' id='DeliveryTerms' valign=top><ul><li>Upon acceptance of this PO, Vendor agrees to our standard terms and conditions (attached) and we shall be entitled to treat any other terms and conditions introduced by or on behalf of the vendor as having no effect. <li>Payment Terms : 45  days from receipt of undisputed invoice supported by complete documentation <li>Deliver to : <b>TLO KSB, Kemaman</b>.  Attn : <b>-</b>   <li>Unless otherwise indicated on this PO, price includes delivery up to the delivery point mentioned above. <li>Promised delivery date : <b>ASAP</b> </ul> </td>
+<td valign=top colspan=4 class='cg10' > &nbsp; For and on Behalf of <br/>&nbsp;<b> TL OFFSHORE SDN BHD
+<br/>
+<br/>
+<br/></td></tr>
+<tr class='ItemListSpl'><td valign=top colspan=4  class='cg10' >&nbsp;Authorised Signatory</td></tr>
+</table><table border=0 width=730px><tr><td align='center' class='Footer'>1-Vendor Original, 2-Master Control Copy, 3-Accounts Copy, 4-Requisitioner's Copy<br/><div class='Page' ID='PageNo'>Pg 1 of </div></td></tr></table>
+
+</P>
+<div ID='lastPage' style='display:none;'>1</div>
+</body>
+<html>

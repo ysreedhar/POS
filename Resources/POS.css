@@ -1,0 +1,321 @@
+.BODY
+{
+	font-family: Tahoma;
+	font-size: 8pt;
+}
+.OrderNumber
+{
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: 'Century Gothic';
+}
+.GrandTotal
+{
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Tahoma;
+}
+.cg10
+{
+	font-size: 8pt;
+	font-family: 'Century Gothic';
+}
+.INote
+{
+	font-size: 8pt;
+	font-family: 'Tahoma';
+}
+.OrderNumberTag
+{
+	font-size: 14pt;
+	font-family: 'Century Gothic';
+}
+.OrderHeaderTag
+{
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: 'Century Gothic';
+}
+.OrderHeader
+{
+	font-size: 8pt;
+	font-family: 'Tahoma';
+	font-weight: normal;
+}
+.DeliveryTerms
+{
+	font-size: 6pt;
+	font-family: 'Tahoma';
+	font-weight: normal;
+}
+
+.TableFont
+{
+	color: Black;
+	font-family: Tahoma;
+	font-size: 7pt;
+	text-transform: capitalize;
+}
+.TrFont
+{
+	color: black;
+	font-family: Tahoma;
+	font-size: 7pt;
+	text-transform: capitalize;
+	cursor: HAND;
+}
+.TableStyle
+{
+	border-collapse: collapse;
+}
+.Footer
+{
+	font-size: 6pt;
+	font-style: italic;
+	font-family: Tahoma;
+}
+.HeaderRow
+{
+	color: white;
+	font-family: Tahoma;
+	background-color: #000000;
+	font-size: 7pt;
+}
+.TitleStyle
+{
+	font-family: Sapura,Tahoma;
+	font-size: 10pt;
+}
+#TitleStyle
+{
+	font-family: Sapura,Tahoma;
+	font-size: 10pt;
+}
+.SplSpan
+{
+	page-break-before: always;
+}
+.SectionHeader
+{
+	font-family: Tahoma;
+	font-size: 8pt;
+}
+.DetailHeader
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+}
+.DetailData
+{
+	font-family: Tahoma;
+	font-size: 8pt;
+}
+.ColumnHeaderStyle
+{
+	font-family: Tahoma;
+	font-size: 8pt;
+	border-style: outset;
+	border-width: 1;
+}
+
+.TableStyle
+{
+	border-collapse: collapse;
+}
+.TitleStyle
+{
+	font-family: Tahoma;
+	font-size: 15pt;
+}
+.SectionHeader
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+}
+.DetailHeader
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+.DetailData
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+.ColumnHeaderStyle
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+	border-style: outset;
+	border-width: 1;
+}
+.PoNumber
+{
+	font-weight: bold;
+	font-size: 12pt; /*	text-transform: uppercase;*/
+	font-family: 'Century Gothic';
+}
+.Poheader
+{
+	font-weight: bold;
+	font-size: 14pt; /*text-transform: uppercase;*/
+	font-family: 'Century Gothic';
+}
+.CompanyLogoAddress
+{
+	font-size: 10pt;
+	font-family: sapura;
+	vertical-align: top;
+	text-align: left;
+}
+#CompanyAddress
+{
+	font-size: 10pt;
+	font-family: sapura;
+	vertical-align: top;
+	text-align: right;
+}
+.ItemList th
+{
+	font: bold 9pt 'Century Gothic';
+	color: #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-collapse: collapse;
+	background-color: #dcdcdc;
+	text-align: center;
+}
+
+.ItemList tr
+{
+	font-size: 8pt;
+	font-family: 'Century Gothic';
+	background-color: #dcdcdc;
+	font-weight: bold;
+	border-collapse: collapse;
+	font-variant: normal;
+}
+.ini
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	background-color: #dcdcdc;
+}
+.ItemList table
+{
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	border-collapse: collapse;
+}
+.ItemListSpl td
+{
+	border-collapse: collapse;
+	margin: 0px;
+	background: #fff;
+	color: #000000;
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 1px solid; /*padding: 6px 6px 6px 6px;*/
+}
+.ItemListSpl tr
+{
+	margin: 0px;
+	background: #fff;
+	color: #000000;
+	border-collapse: collapse;
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	text-transform: none;
+	font-variant: normal;
+}
+
+.ItemList td
+{
+	margin: 1px;
+	background: #fff;
+	color: #000000;
+	border-right: #000000 1px solid;
+	border-top: #000000 0px solid;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 0px solid;
+	padding: 6px 6px 6px 6px;
+	border-collapse: collapse;
+	text-transform: none;
+	font-family: Tahoma;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 8pt;
+}
+.Costcode
+{
+	text-decoration: underline;
+}
+.NormalStyle
+{
+	font-size: 9pt;
+	font-family: 'Tahoma';
+}
+.Reprint
+{
+	font-size: 5pt;
+	color: gray;
+	font-style: italic;
+	font-family: Tahoma;
+}
+.ContinuationBox th
+{
+	font: bold 9pt 'Century Gothic';
+	color: #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-collapse: collapse;
+	background-color: #dcdcdc;
+	text-align: center;
+}
+
+.ContinuationBox tr
+{
+	font-size: 9pt;
+	font-family: 'Century Gothic';
+	font-weight: bold;
+	border-collapse: collapse;
+	font-variant: normal;
+}
+.ContinuationBox table
+{
+	font-variant: normal;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-collapse: collapse;
+}
+.ContinuationBox td
+{
+	font-size: 9pt;
+	font-family: 'Century Gothic';
+	font-weight: bold;
+	border-collapse: collapse;
+	font-variant: normal;
+}
+.PageBreakSpan
+{
+	page-break-before: always;
+	display:none;
+}
+.DraftStyle
+{
+	font-size: 8pt;
+	color: gray;
+	font-style: italic;
+	font-family: Tahoma;
+}

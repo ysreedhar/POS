@@ -1,0 +1,35 @@
+txtMSRNo
+dtpMSRDate
+dtpReceivedDate
+dtpRequiredDate
+txtNosofItems
+txtDescription
+txtRequestor
+txtDepartment
+txtApprovedBy
+cboBuyer
+txtProject
+Microsoft.VSDesigner.DataSource.Control.TableRowData	InsertMSRReceipt (@MSRNo, @MSRDate, @RecvdDate, @RequiredDate, @NosItems, @Requestor, @Department, @Approvedby, @Project, @Buyer, @Description, @Status)
+
+INSERT INTO [tblMSRReceipts] ([MSRNo], [MSRDate], [RecvdDate], [RequiredDate], [NosItems], [Requestor], [Department], [Approvedby], [Project], [Buyer], [Description], [Status]) VALUES (@MSRNo, @MSRDate, @RecvdDate, @RequiredDate, @NosItems, @Requestor, @Department, @Approvedby, @Project, @Buyer, @Description, @Status);
+SELECT  SCOPE_IDENTITY()
+
+
+-----
+Microsoft.VSDesigner.DataSource.Control.TableRowData	UpdateMSRReceipt (@MSRNo, @MSRDate, @RecvdDate, @RequiredDate, @NosItems, @Requestor, @Department, @Approvedby, @Project, @Buyer, @Description, @Status, @MSRID)
+
+
+UPDATE [tblMSRReceipts] SET [MSRNo] = @MSRNo, [MSRDate] = @MSRDate, [RecvdDate] = @RecvdDate, [RequiredDate] = @RequiredDate, [NosItems] = @NosItems, [Requestor] = @Requestor, [Department] = @Department, [Approvedby] = @Approvedby, [Project] = @Project, [Buyer] = @Buyer, [Description] = @Description, [Status] = @Status WHERE [MSRID] =@MSRID
+
+
+---------------
+
+Microsoft.VSDesigner.DataSource.Control.TableRowData	UpdateMSRStatus (@Status, @MSRClosed, @MSRClosedDt, @POID, @MSRID)
+
+UPDATE [tblMSRReceipts] SET [Status] = @Status,[MSRClosed] = @MSRClosed, [MSRClosedDt] = @MSRClosedDt, [POID] = @POID WHERE ([MSRID] = @MSRID) 
+
+---------
+
+Microsoft.VSDesigner.DataSource.Control.TableRowData	UpdateMSRStatusbyMSRNo (@Status, @MSRNo)
+
+UPDATE [tblMSRReceipts] SET [Status] = @Status WHERE [MSRNo] = @MSRNo

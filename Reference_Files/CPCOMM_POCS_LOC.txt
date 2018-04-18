@@ -1,0 +1,2 @@
+D:\CommData\MSSQL\Data\POCS_DATA.MDF
+D:\CommData\MSSQL\Data\POCS_LOG.LDF

@@ -1,0 +1,8 @@
+txtVendorName
+txtAddress
+txtCity
+txtPostalCode
+txtTelephone
+txtFaxNo
+txtContactPerson
+txtHandphoneNo

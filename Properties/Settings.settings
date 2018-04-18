@@ -1,0 +1,52 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="POCS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="margin_bottom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.1
+</Value>
+    </Setting>
+    <Setting Name="margin_left" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.9
+</Value>
+    </Setting>
+    <Setting Name="margin_right" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.7
+</Value>
+    </Setting>
+    <Setting Name="margin_top" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.1
+</Value>
+    </Setting>
+    <Setting Name="strFileUploadPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\temp</Value>
+    </Setting>
+    <Setting Name="FileUploaderService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2238/FileUploader.asmx</Value>
+    </Setting>
+    <Setting Name="StdDeliveryInfo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Upon acceptance of this PO, Vendor agrees to our standard terms and conditions (attached) and we shall be entitled to treat any other terms and conditions introduced by or on behalf of the vendor as having no effect. 
+Payment Terms : days from receipt of undisputed invoice supported by complete documentation 
+Deliver to: Attn:  
+Unless otherwise indicated on this PO, price includes delivery up to the delivery point mentioned above. 
+Promised delivery date : </Value>
+    </Setting>
+    <Setting Name="ImportantInstructions" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;P/O No. and Project / CC Name (above) should be indicated on all Delivery Order and Invoice.&lt;/string&gt;
+  &lt;string&gt;The duration indicated above is an estimate only. Rental or charges shall based on the actual duration as per timesheet duly approved by TLO. Any duration in excess of the above estimaed shall require an Addendum to this P/O, Signed by the TLO authorised signatory.&lt;/string&gt;
+  &lt;string&gt;The Quantity indicated above is an estimate only. Invoice shall be based on the actual delivered quantity as per Delivery Order (DO) or Bunker Delivery Note (BDN). &lt;/string&gt;
+  &lt;string&gt;Bills of Loading or Airway bills must be attached to Invoice to support any freight charges charged&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="POS_DBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=POCS;Persist Security Info=True;User ID=sa;Password=skinhead&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.;Initial Catalog=POCS;Persist Security Info=True;User ID=sa;Password=skinhead</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,35 @@
+FillByPOID 
+-----------------------
+SELECT     PO_Header.*
+FROM         PO_Header
+where POID = @POID
+
+
+
+
+Microsoft.VSDesigner.DataSource.Control.TableRowData	InsertOrder (@VendorName, @VendorAddress, @PO_OrderNo, @PO_Date, @Requisition_OrderNo, @CostCenter, @Orderedby, @Approvedby, @Remarks, @DeliveryTerms, @Currency, @Status, @ChargeType, @CnctPerson, @VendorRef, @Project, @VesselName, @EndUser, @Buyer, @Type, @PO_Description, @DeliveryDate, @ImpInstructions, @DeliveryPoint, @CnctTelephone, @PaymentTerms, @DeliveryPointAttn, @t_date, @t_user)
+----------------------------------------------------------------------------
+INSERT INTO PO_Header
+                      (VendorName, VendorAddress, PO_OrderNo, PO_Date, Requisition_OrderNo, CostCenter, Orderedby, Approvedby, Remarks, DeliveryTerms, Currency, 
+                      Status, ChargeType, CnctPerson, VendorRef, Project, VesselName, EndUser, Buyer, Type, PO_Description, DeliveryDate, ImpInstructions, 
+                      DeliveryPoint, CnctTelephone, PaymentTerms, DeliveryPointAttn, t_date, t_user)
+VALUES     (@VendorName,@VendorAddress,@PO_OrderNo,@PO_Date,@Requisition_OrderNo,@CostCenter,@Orderedby,@Approvedby,@Remarks,@DeliveryTerms,@Currency,@Status,@ChargeType,@CnctPerson,@VendorRef,@Project,@VesselName,@EndUser,@Buyer,@Type,@PO_Description,@DeliveryDate,@ImpInstructions,@DeliveryPoint,@CnctTelephone,@PaymentTerms,@DeliveryPointAttn,@t_date,@t_user);   
+SELECT SCOPE_IDENTITY()
+
+
+
+
+
+UPDATE    PO_Header
+SET              VendorName = @VendorName, PO_OrderNo = @PO_OrderNo, VendorAddress = @VendorAddress, PO_Date = @PO_Date, 
+                      Requisition_OrderNo = @Requisition_OrderNo, CostCenter = @CostCenter, Orderedby = @Orderedby, Approvedby = @Approvedby, 
+                      Remarks = @Remarks, DeliveryTerms = @DeliveryTerms, Currency = @Currency, Status = @Status, ChargeType = @ChargeType, 
+                      CnctPerson = @CnctPerson, VendorRef = @VendorRef, Project = @Project, VesselName = @VesselName, EndUser = @EndUser, Buyer = @Buyer, 
+                      Type = @Type, PO_Description = @PO_Description, DeliveryDate = @DeliveryDate, ImpInstructions = @ImpInstructions, 
+                      DeliveryPoint = @DeliveryPoint, CnctTelephone = @CnctTelephone, PaymentTerms = @PaymentTerms, DeliveryPointAttn = @DeliveryPointAttn, 
+                      t_date = @t_date, t_user = @t_user
+WHERE     (POID = @POID)
+
+------------------------------
+Microsoft.VSDesigner.DataSource.Control.TableRowData	UpdateOrder (@VendorName, @PO_OrderNo, @VendorAddress, @PO_Date, @Requisition_OrderNo, @CostCenter, @Orderedby, @Approvedby, @Remarks, @DeliveryTerms, @Currency, @Status, @ChargeType, @CnctPerson, @VendorRef, @Project, @VesselName, @EndUser, @Buyer, @Type, @PO_Description, @DeliveryDate, @ImpInstructions, @DeliveryPoint, @CnctTelephone, @PaymentTerms, @DeliveryPointAttn, @t_date, @t_user, @POID)
+

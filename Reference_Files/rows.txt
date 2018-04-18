@@ -1,0 +1,41 @@
+if (Sno.ToString() != dsDetails.Tables["vPOdetailsCalculation"].Rows.Count.ToString())
+                    {
+                        if (rowsHeight > 476)
+                        {//rowsHeight - 504 
+                            if (Page == 1 & Sno == dsDetails.Tables["vPOdetailsCalculation"].Rows.Count)
+                            {
+                                goto WriteEnd;
+                            }
+                            else if(Page == 1 & Sno != )
+                            {
+
+                            }
+                            else if (Page > 1 & Sno != dsDetails.Tables["vPOdetailsCalculation"].Rows.Count)
+                            {
+                                WriteDummyItemRows(htmlContent, newline, rowsHeight - 476);
+                                WriteSpecialIntructions(htmlContent, newline, sbInI.ToString(), WithHoldingTotal, SubTotal, GrandTotal, Currency, false);
+                                WriteFooter(htmlContent, newline, sbDeliveryTerms.ToString(), false);
+                                WritePageFooter(htmlContent, newline, Page.ToString(), true);
+                                Page = Page + 1;
+                                WritePageHeader(false, htmlContent, newline);
+                                WriteItemListHeader(false, htmlContent, newline, Currency);
+                                rowsHeight = 0;
+                                SubTotal = 0;
+                            }
+                            else if (Sno != dsDetails.Tables["vPOdetailsCalculation"].Rows.Count)
+                            {
+                                WriteSpecialIntructions(htmlContent, newline, sbInI.ToString(), WithHoldingTotal, SubTotal, GrandTotal, Currency, false);
+                                WriteFooter(htmlContent, newline, sbDeliveryTerms.ToString(), false);
+                                WritePageFooter(htmlContent, newline, Page.ToString(), true);
+                                Page = Page + 1;
+                                WritePageHeader(false, htmlContent, newline);
+                                WriteItemListHeader(false, htmlContent, newline, Currency);
+                                rowsHeight = 0;
+                                SubTotal = 0;
+                            }
+                            else
+                            {
+                                WriteDummyItemRows(htmlContent, newline, 720 - rowsHeight);
+                            }
+                        }
+}

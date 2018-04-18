@@ -1,0 +1,119 @@
+<HTML><HEAD><script type='text/javascript'>function getRowHeight()
+{
+ var rHeight = document.getElementById('mydiv').clientHeight;
+var oVDiv = document.getElementById('mydiv');
+//alert ('Height = ' + document.getElementById('DeliveryTerms').clientHeight)
+//oVDiv.innerHTML = oVDiv.innerHTML + ' - ' + oVDiv.offsetHeight;
+//document.getElementById('PageNo').innerHTML = document.getElementById('PageNo').innerHTML + document.getElementById('lastPage').innerHTML;
+var x = document.getElementsByTagName('div');
+for (var i=0;i<x.length;i++)
+{
+if (x[i].className == 'Page')
+x[i].innerHTML = x[i].innerHTML + document.getElementById('lastPage').innerHTML;
+// if (x[i].className == 'ItemName')
+// x[i].innerHTML = x[i].innerHTML + '-' + x[i].offsetHeight;
+}
+}
+</script><TITLE>Report - Purchase Order</TITLE>
+<LINK href='resources/POS.css' rel='stylesheet' type='text/css' media='screen' >
+<LINK href='resources/POS_Print.css' rel='stylesheet' type='text/css' media='print' >
+</HEAD>
+<body  scroll=auto style='text-align: left' valign='top' onLoad='getRowHeight()'>
+<table border='0' width='100%' cellpadding=0 cellspacing=0><tr><td><table border='0' width='100%' class='CompanyLogoAddress' >
+<tr>
+<td width='80%'>&nbsp;</td>
+<td style='text-align: right'>
+<img src='resources/logo.png' /></td>
+</tr>
+</table>
+<table valign=top border='0' width=65% cellpadding='1' cellspacing='1'>
+<tr><td colspan=5 class='PONumber' nowrap><span class='OrderNumberTag'> Purchase Order No:</span><span class='POheader'> PO- 11875</span></td></tr>
+<tr> <td valign='top' class='OrderHeaderTag'>PO Date:</td><td colspan=4 class='OrderHeader'> 28-Aug-2007<br/>&nbsp;</td></tr>
+<tr> <td height=90px width=20%  valign='top' class='OrderHeaderTag'>To:</td><td valign=top colspan=4 class='OrderHeader'><b>Custom Industrial Supplies Sdn Bhd</b><br/>No 41-1 Jalan 26/117A Taman Mulia<br/>Kuala Lumpur  56000<br/>Tel: 03-9172 6626<br/>Fax: 03-9172 6627</td></tr>
+<tr><td class='OrderHeaderTag'>Attn: </td><td colspan=4 class='OrderHeader'>Rahim Ahmad / Shahril</td></tr>
+<tr> <td valign='top' class='OrderHeaderTag'>Vendor's Ref: </td><td height=30px valign='top' colspan=4 class='OrderHeader'>CIS/TLO/2315</td></tr>
+<tr> <td  valign='top' class='OrderHeaderTag'>Requestor: </td><td valign='top' colspan=4 class='OrderHeader'>Mohd Yasri</td></tr>
+<tr> <td valign='top'  class='OrderHeaderTag'>Buyer: </td><td colspan=4 valign='top' class='OrderHeader'>NMD</td></tr>
+<tr> <td valign='top'  class='OrderHeaderTag'>Project / CC: </td><td colspan=4 valign='top' class='OrderHeader'>PCSB- 12" ANDRA-A to ANDP-D Pipeline</td></tr>
+<tr> <td valign='top'  class='OrderHeaderTag'>Charge Type: </td><td colspan=4 valign='top' class='OrderHeader'>CP</td></tr>
+<tr> <td valign='top'  class='OrderHeaderTag'>PO Description: &nbsp;</td><td colspan=4 height=30px valign='top' class='OrderHeader'>To Supply and Deliver of KaMOS Gasket <br/></td></tr>
+</table>
+<table valign=top  border=0 cellpadding=1><tr><td colspan=5> <table  valign=top border='0' style='border-collapse:collapse;table-layout:fixed;' width='100%' cellpadding='0' cellspacing='0'>
+<tr class='ItemList'>
+<th style='border-collapse:collapse;' width='32px'>&nbsp;Item No</th>
+<th width='280px'>Item Description</th>
+<th align=center width='50px'>MSR<br/>No</th>
+<th width='60px'>Qty</th>
+<th width='45px'>UOM</th>
+<th width='79px'>Unit Price<br/>(RM)</th>
+<th width='90px' nowrap>Total Price <br/>(RM)</th>
+</tr>
+<tr height='100%' valign='top' class='ItemList'>
+<td valign=top   align=center>1.</td>
+<td valign=top ><div ID='mydiv' class='ItemName'><span class='costcode'>Charge Code: 94812-301A-30002-CP </span><br>KaMOS  RTJ R-57 Oval Ring Gasket 12"  900# ,soft iron, cadmium plated</div></td>
+<td valign=top  align=center>15801</td>
+<td valign=top  align='right'>6</td>
+<td valign=top  align=center>Nos</td>
+<td valign=top  align='right'>10720.44</td>
+<td valign=top  align='right'>64,322.64</td>
+</tr>
+<tr height='100%' valign='top' class='ItemList'>
+<td valign=top   align=center>2.</td>
+<td valign=top ><div ID='mydiv' class='ItemName'><span class='costcode'>Charge Code: 94812-301A-30002-CP </span><br>KaMOS Patented Blind Plug Caps</div></td>
+<td valign=top  align=center>15801</td>
+<td valign=top  align='right'>6</td>
+<td valign=top  align=center>Nos</td>
+<td valign=top  align='right'>794.52</td>
+<td valign=top  align='right'>4,767.12</td>
+</tr>
+<tr height='100%' valign='top' class='ItemList'>
+<td valign=top   align=center>3.</td>
+<td valign=top ><div ID='mydiv' class='ItemName'><span class='costcode'>Charge Code: 94812-301A-30002-CP </span><br>KaMOS Patented Testplug</div></td>
+<td valign=top  align=center>15801</td>
+<td valign=top  align='right'>2</td>
+<td valign=top  align=center>Nos</td>
+<td valign=top  align='right'>3,006.00</td>
+<td valign=top  align='right'>6,012.00</td>
+</tr>
+<tr height='100%' valign='top' class='ItemList'>
+<td valign=top   align=center>4.</td>
+<td valign=top ><div ID='mydiv' class='ItemName'><span class='costcode'>Charge Code: 94812-301A-30002-CP </span><br>KaMOS RTJ Gasket Installation  and Testing Equipment/ Consumables<br>Lumpsum Discount of 8% from total value</div></td>
+<td valign=top  align=center>15801</td>
+<td valign=top  align='right'>1</td>
+<td valign=top  align=center>Lot<br/> Disc. </td>
+<td valign=top  align='right'>33,995.70 <br/> 0% </td>
+<td valign=top  align='right'>33,995.70 <br/> (8,727.80)</td>
+</tr>
+<tr valign='top' height='185.00px'  class='ItemList'>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr  class='ItemListSpl' >
+<td colspan=5 height=100% align=center ><span class='INote'> Important Note / Instructions</span></td>
+<td rowspan=2 valign='top' align='left' class='cg10'><b>&nbsp;Sub-Total <br/></td>
+<td rowspan=2 valign='top' align='right' class='NormalStyle'>100,369.66<br/><br/></td></tr>
+<tr  class='ItemListSpl'>
+<td colspan=5 height='90px' class='INote' valign='top' >P/O No., MSR no  and Project / CC Name (above) should be indicated on all Delivery Order and Invoice.<br/></td></tr>
+<tr  class='ItemListSpl'>
+<td valign ='middle' colspan=5 class='cg10'><b>RM : One Hundred Thousand Three Hundred Sixty Nine and Sixty Six Cents Only.</b> </td>
+<td height='42px' valign ='middle' class='cg10' ><b>&nbsp;PO Total</b></td>
+<td align='right' valign ='middle' class='NormalStyle' ><b>100,369.66</b></td>
+</tr>
+<tr class='ItemListSpl' > <td rowspan=2 colspan=3 class='DeliveryTerms' id='DeliveryTerms' valign=top><ul><li>Upon acceptance of this PO, Vendor agrees to our standard terms and conditions (attached) and we shall be entitled to treat any other terms and conditions introduced by or on behalf of the vendor as having no effect. <li>Payment Terms : 45  days from receipt of undisputed invoice supported by complete documentation <li>Deliver to : <b>TLO, KSB, Kemaman</b>.  Attn : <b>Yasri/ Khairil Anuar</b>   <li>Unless otherwise indicated on this PO, price includes delivery up to the delivery point mentioned above. <li>Promised delivery date : <b>28th September 2007 or ea</b>  </ul> </td>
+<td valign=top colspan=4 class='cg10' > &nbsp; For and on behalf of <br/>&nbsp;<b> TL OFFSHORE SDN BHD
+<br/>
+<br/>
+<br/></td></tr>
+<tr class='ItemListSpl'><td valign=top colspan=4  class='cg10' >&nbsp;Authorised Signatory</td></tr>
+</table></td></tr></table><table border=0 width='100%' cellspacing=0 cellpadding=0><tr><td align='center' class='Footer'>1-Vendor Original, 2-Master Control Copy, 3-Accounts Copy, 4-Requisitioner's Copy<br/><div class='Page' ID='PageNo'>Pg 1 of </div></td></tr></table>
+
+</P>
+<div ID='lastPage' style='display:none;'>1</div>
+</td></tr></table></td></tr></table>
+</body>
+</html>
